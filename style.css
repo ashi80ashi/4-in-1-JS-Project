@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient( #33d9b2 , #099e7d);
+}
+.container{
+    height:90vh;
+    width: 90vw;
+    margin: 5vh auto;
+    padding: 2vh 5vw;
+    background-image: linear-gradient( #3bf6ca , #06b48f);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px  rgb(114, 117, 119);
+}
+
+h2{
+    color: #025948;
+    text-align: center;
+    font-weight: 900;
+    font-size: xx-large;
+    text-shadow:  0px 0px 10px  #057059;
+}
+.hero{
+    margin: 2vh 0vw;
+    height: 85%;
+    
+}
+.list{
+    height: 30%;
+    background-color: #33d9b2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    box-shadow: inset  0px 0px 10px  rgb(114, 117, 119);
+    border-radius: 5px;
+}
+.list > li{
+    width: 15%;
+    height: 50%;
+    color: #0d6c57;
+    background: #48f9d0;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px  rgb(114, 117, 119);
+    border-radius: 5px;
+    padding: 3vh  0vh;
+}
+.list>li:hover{
+    scale:95%;
+    box-shadow: inset 0px 0px 10px  rgb(114, 117, 119);
+    background: #33d9b2;
+   color: #063f33;
+    transition: all 0.5s ;
+   
+}
+
+#iframe{
+    height: 50vh;
+    width: 100%;
+    background: #000;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 991px) {
+    .list{
+        height: 20%;
+    }
+ .list >li {
+             font-size:medium;
+             height: 50%;
+             padding: 1vh;
+           }
+  
+           .frame{
+            margin-top: 10vh;
+         }
+ }
+ @media screen and (max-width: 499px) {
+    .list{
+        height: 15%;
+    }
+         .list>li{
+            padding: 0vh;
+            height: 50%;
+            font-size: small;
+         }
+
+         .frame{
+            margin-top: 10vh;
+         }
+}
